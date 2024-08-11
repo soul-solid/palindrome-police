@@ -1,0 +1,130 @@
+:root {
+    --background: #0f0e17;
+    --headline: #fffffe;
+    --paragraph: #a7a9be;
+    --highlight: #ff8906;
+    --stroke: black;
+    --secondary: #f25f4c;
+    --tertiary: #e53170;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  body {
+    background-color: var(--background);
+    margin: 190px auto;
+  }
+  
+  #header {
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: var(--headline);
+    text-align: center;
+  }
+  
+  #main-part {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    background-color: var(--secondary);
+    height: fit-content;
+    width: 440px;
+    padding: 12px;
+    margin-top: 30px;
+  }
+  
+  #title {
+    color: var(--headline);
+    margin: 2px auto;
+    margin-bottom: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.7rem;
+  }
+  
+  #subtitle {
+    margin: 2px auto;
+    margin-bottom: 15px;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  #text-input, #check-btn {
+    margin: 2px auto;
+    padding-top: 3px;
+    height: 30px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    color: var(--secondary);
+    background-color: var(--headline);
+  }
+  
+  #text-input {
+    color: var(--background);
+  }
+  
+  #text-input::placeholder {
+    color: var(--secondary);
+    opacity: 100;
+  }
+  
+  #text-input:focus::placeholder {
+    opacity: 0;
+  }
+  
+  #text-input:focus {
+    border: 2px solid black;
+    outline: none;
+    color: var(--background);
+  }
+  
+  #text-input:hover, #check-btn:hover {
+    border: 2px solid black;
+    background-color: var(--background);
+    color: var(--secondary);
+  }
+  
+  #result {
+    margin-top: 15px;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  #definition {
+    border: 2px solid var(--tertiary);
+    border-radius: 20px;
+    background-color: var(--tertiary);
+    height: fit-content;
+    width: 440px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #palin-def {
+    color: var(--headline);
+    font-family: "Neuton", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+  }

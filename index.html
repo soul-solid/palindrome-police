@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Major+Mono+Display&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="header">
+      <span>Palindrome Police!</span>
+    </h1>
+    <div id="main-part">
+      <span id="title">This is a palindrome checkpoint</span>
+      <span id="subtitle">(Show us your word RIGHT NOW SIR! &#128299;)</span>
+      <div id="input-button">
+        <form id="form" onsubmit="return false">
+          <input id="text-input" type="text" placeholder="Enter a word" required>
+          <button id="check-btn" type="submit" value="check-button">SHOW</button>
+        </form>
+      </div>
+      <span id="result"></span>
+    </div>
+    <div id="definition">
+      <span id="palin-def">&#128161; A <i>palindrome</i> is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).</span>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
